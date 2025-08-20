@@ -1,5 +1,5 @@
 ---
-const year = new Date().getFullYear();
+const currentYear = new Date().getFullYear();
 ---
 
 <html lang="en">
@@ -9,21 +9,18 @@ const year = new Date().getFullYear();
     <title>WhoIsYourBroker.com</title>
   </head>
   <body class="min-h-screen bg-[#F4F1E5] text-gray-800">
-
     <!-- Header -->
     <header class="bg-[#007A33] text-white p-6 shadow-md">
       <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
-        <div class="flex flex-col sm:flex-row items-start sm:items-center space-y-2 sm:space-y-0 sm:space-x-4">
-          <div>
-            <h1 class="text-2xl font-bold">WhoIsYourBroker.com</h1>
-            <p class="text-sm">A GlobalGreen Insurance Agency®</p>
-            <p class="text-xs italic">An independently owned franchise</p>
-          </div>
+        <div>
+          <h1 class="text-2xl font-bold">WhoIsYourBroker.com</h1>
+          <p class="text-sm">A GlobalGreen Insurance Agency®</p>
+          <p class="text-xs italic">An independently owned franchise</p>
         </div>
         <nav class="space-x-4 text-center sm:text-left">
-          <a href="#personal" class="block sm:inline hover:underline">Personal Insurance</a>
-          <a href="#commercial" class="block sm:inline hover:underline">Commercial Insurance</a>
-          <a href="#contact" class="block sm:inline hover:underline">Contact</a>
+          <a href="#personal" class="hover:underline">Personal Insurance</a>
+          <a href="#commercial" class="hover:underline">Commercial Insurance</a>
+          <a href="#contact" class="hover:underline">Contact</a>
         </nav>
       </div>
     </header>
@@ -32,10 +29,8 @@ const year = new Date().getFullYear();
     <section class="text-center py-20 px-4 bg-white">
       <h2 class="text-4xl font-bold mb-4 text-[#007A33]">Your Trusted Independent Insurance Partner</h2>
       <p class="text-lg mb-6 text-gray-700">Personalized coverage for individuals and businesses</p>
-      <a href="#contact">
-        <button class="px-6 py-3 text-lg bg-[#F47920] hover:bg-[#e36d10] text-white rounded-lg">
-          Get a Free Quote
-        </button>
+      <a href="#contact" class="px-6 py-3 text-lg bg-[#F47920] hover:bg-[#e36d10] text-white rounded-lg shadow-md">
+        Get a Free Quote
       </a>
     </section>
 
@@ -43,23 +38,17 @@ const year = new Date().getFullYear();
     <section id="personal" class="max-w-7xl mx-auto py-16 px-4 sm:px-6">
       <h3 class="text-3xl font-semibold mb-8 text-[#007A33]">Personal Insurance</h3>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="bg-white border border-[#F4F1E5] rounded-lg">
-          <div class="p-6">
-            <h4 class="text-xl font-bold mb-2 text-[#F47920]">Auto Insurance</h4>
-            <p>Comprehensive protection for your car, liability, and more.</p>
-          </div>
+        <div class="bg-white border border-[#F4F1E5] p-6 rounded-lg shadow-sm">
+          <h4 class="text-xl font-bold mb-2 text-[#F47920]">Auto Insurance</h4>
+          <p>Comprehensive protection for your car, liability, and more.</p>
         </div>
-        <div class="bg-white border border-[#F4F1E5] rounded-lg">
-          <div class="p-6">
-            <h4 class="text-xl font-bold mb-2 text-[#F47920]">Homeowners Insurance</h4>
-            <p>Safeguard your home and belongings from unexpected loss or damage.</p>
-          </div>
+        <div class="bg-white border border-[#F4F1E5] p-6 rounded-lg shadow-sm">
+          <h4 class="text-xl font-bold mb-2 text-[#F47920]">Homeowners Insurance</h4>
+          <p>Safeguard your home and belongings from unexpected loss or damage.</p>
         </div>
-        <div class="bg-white border border-[#F4F1E5] rounded-lg">
-          <div class="p-6">
-            <h4 class="text-xl font-bold mb-2 text-[#F47920]">Life Insurance</h4>
-            <p>Protect your loved ones' future with affordable life insurance options.</p>
-          </div>
+        <div class="bg-white border border-[#F4F1E5] p-6 rounded-lg shadow-sm">
+          <h4 class="text-xl font-bold mb-2 text-[#F47920]">Life Insurance</h4>
+          <p>Protect your loved ones' future with affordable life insurance options.</p>
         </div>
       </div>
     </section>
@@ -69,23 +58,17 @@ const year = new Date().getFullYear();
       <div class="max-w-7xl mx-auto">
         <h3 class="text-3xl font-semibold mb-8 text-[#007A33]">Commercial Insurance</h3>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div class="bg-white border border-[#F4F1E5] rounded-lg">
-            <div class="p-6">
-              <h4 class="text-xl font-bold mb-2 text-[#F47920]">General Liability</h4>
-              <p>Coverage that protects your business from common risks.</p>
-            </div>
+          <div class="bg-white border border-[#F4F1E5] p-6 rounded-lg shadow-sm">
+            <h4 class="text-xl font-bold mb-2 text-[#F47920]">General Liability</h4>
+            <p>Coverage that protects your business from common risks.</p>
           </div>
-          <div class="bg-white border border-[#F4F1E5] rounded-lg">
-            <div class="p-6">
-              <h4 class="text-xl font-bold mb-2 text-[#F47920]">Commercial Auto</h4>
-              <p>Protect vehicles used for business with flexible commercial auto policies.</p>
-            </div>
+          <div class="bg-white border border-[#F4F1E5] p-6 rounded-lg shadow-sm">
+            <h4 class="text-xl font-bold mb-2 text-[#F47920]">Commercial Auto</h4>
+            <p>Protect vehicles used for business with flexible commercial auto policies.</p>
           </div>
-          <div class="bg-white border border-[#F4F1E5] rounded-lg">
-            <div class="p-6">
-              <h4 class="text-xl font-bold mb-2 text-[#F47920]">Workers' Compensation</h4>
-              <p>Ensure your employees are covered in case of work-related injuries.</p>
-            </div>
+          <div class="bg-white border border-[#F4F1E5] p-6 rounded-lg shadow-sm">
+            <h4 class="text-xl font-bold mb-2 text-[#F47920]">Workers' Compensation</h4>
+            <p>Ensure your employees are covered in case of work-related injuries.</p>
           </div>
         </div>
       </div>
@@ -96,37 +79,24 @@ const year = new Date().getFullYear();
       <div class="max-w-xl mx-auto text-center">
         <h3 class="text-3xl font-semibold mb-4 text-[#007A33]">Get in Touch</h3>
         <p class="mb-8 text-gray-700">We’re here to help you find the right insurance solution.</p>
+        
         <div class="space-y-4">
-          <!-- Mail -->
-          <div class="flex items-center justify-center space-x-2">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#007A33]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path d="M4 4h16v16H4z" stroke="none"/>
-              <path d="M22 6l-10 7L2 6" />
-            </svg>
-            <span>info@whoisyourbroker.com</span>
-          </div>
-          <!-- Phone -->
-          <div class="flex items-center justify-center space-x-2">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#007A33]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.63A2 2 0 014.11 2h3a2 2 0 012 1.72c.12.81.37 1.61.73 2.35a2 2 0 01-.45 2.18L8.09 9.91a16 16 0 006 6l1.66-1.66a2 2 0 012.18-.45c.74.36 1.54.61 2.35.73A2 2 0 0122 16.92z"/>
-            </svg>
-            <span>636-733-0030</span>
-          </div>
-          <!-- Fax (rotated phone) -->
-          <div class="flex items-center justify-center space-x-2">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#007A33] transform rotate-90" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.63A2 2 0 014.11 2h3a2 2 0 012 1.72c.12.81.37 1.61.73 2.35a2 2 0 01-.45 2.18L8.09 9.91a16 16 0 006 6l1.66-1.66a2 2 0 012.18-.45c.74.36 1.54.61 2.35.73A2 2 0 0122 16.92z"/>
-            </svg>
-            <span>Fax: 636-733-0030</span>
-          </div>
+          <p class="flex items-center justify-center space-x-2">
+            📧 <span>info@whoisyourbroker.com</span>
+          </p>
+          <p class="flex items-center justify-center space-x-2">
+            ☎️ <span>636-733-0030</span>
+          </p>
+          <p class="flex items-center justify-center space-x-2">
+            📠 <span>Fax: 636-733-0030</span>
+          </p>
         </div>
 
-        <!-- Contact Form -->
         <form action="https://formspree.io/f/yourFormID" method="POST" class="mt-8 space-y-4">
-          <input class="w-full p-3 border rounded-lg" type="text" name="name" placeholder="Your Name" required />
-          <input class="w-full p-3 border rounded-lg" type="email" name="email" placeholder="Your Email" required />
-          <textarea class="w-full p-3 border rounded-lg" name="message" placeholder="Your Message" required></textarea>
-          <button type="submit" class="w-full bg-[#F47920] hover:bg-[#e36d10] text-white py-3 rounded-lg">
+          <input type="text" name="name" placeholder="Your Name" required class="w-full p-3 border rounded" />
+          <input type="email" name="email" placeholder="Your Email" required class="w-full p-3 border rounded" />
+          <textarea name="message" placeholder="Your Message" required class="w-full p-3 border rounded"></textarea>
+          <button type="submit" class="w-full bg-[#F47920] hover:bg-[#e36d10] text-white py-3 rounded-lg shadow-md">
             Send Message
           </button>
         </form>
@@ -135,7 +105,7 @@ const year = new Date().getFullYear();
 
     <!-- Footer -->
     <footer class="bg-[#007A33] text-white text-center py-4 px-4">
-      <p>&copy; {year} WhoIsYourBroker. All rights reserved.</p>
+      <p>&copy; {currentYear} WhoIsYourBroker. All rights reserved.</p>
     </footer>
   </body>
 </html>
